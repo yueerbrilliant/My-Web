@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="myPar">I am a paragraph.</p>
+<div id="myDiv">I am a div.</div>
+
+<p>
+<button type="button" onclick="myFunction()">点击这里</button>
+</p>
+
+<script>
+function myFunction()
+{
+
+var parInfo = 'Hello \
+world!';
+var divInfo = 'How are you?';
+var answer = "I'm fine."
+document.getElementById("myPar").innerHTML = parInfo;
+document.getElementById("myDiv").innerHTML = divInfo;
+//document.write(answer + "<br>");//会覆盖整个文档
+}
+
+</script>
+
+<p>当点击上面的按钮时，两个元素会改变。</p>
+</body>
+</html>
